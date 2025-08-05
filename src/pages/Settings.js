@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Settings, 
   Bell, 
@@ -21,7 +21,7 @@ import { useGame } from '../context/GameContext';
 import toast from 'react-hot-toast';
 import './Settings.css';
 
-const Settings = () => {
+const SettingsPage = () => {
   const { user, preferences, updatePreferences, logout } = useUser();
   const { soundEnabled, animationsEnabled, toggleSound, toggleAnimations } = useGame();
   const [activeTab, setActiveTab] = useState('preferences');
@@ -460,4 +460,4 @@ const Settings = () => {
   );
 };
 
-export default Settings; 
+export default SettingsPage; 

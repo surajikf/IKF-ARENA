@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -24,6 +24,27 @@ import Settings from './pages/Settings';
 import './App.css';
 
 function App() {
+  const [showWelcome, setShowWelcome] = useState(false);
+  const [isFirstVisit, setIsFirstVisit] = useState(true);
+
+  useEffect(() => {
+    // Check if this is the user's first visit
+    const hasVisited = localStorage.getItem('ai-mastermind-visited');
+    if (!hasVisited) {
+      setShowWelcome(true);
+      setIsFirstVisit(true);
+    }
+  }, []);
+
+  const handleWelcomeComplete = (userData) => {
+    setShowWelcome(false);
+    localStorage.setItem('ai-mastermind-visited', 'true');
+    setIsFirstVisit(false);
+    
+    // You can handle the user data here if needed
+    console.log('Welcome completed with user data:', userData);
+  };
+
   return (
     <UserProvider>
       <GameProvider>
@@ -67,6 +88,9 @@ function App() {
                 },
               }}
             />
+            {showWelcome && (
+              <WelcomeAnimation onComplete={handleWelcomeComplete} />
+            )}
           </div>
         </Router>
       </GameProvider>

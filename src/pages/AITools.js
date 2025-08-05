@@ -132,7 +132,25 @@ const AITools = () => {
   const handleTryTool = () => {
     if (selectedTool) {
       addXP(selectedTool.xpReward * 2);
+      addNotification({
+        type: 'success',
+        title: 'Tool Launched!',
+        message: `You're now using ${selectedTool.name}. Complete the tutorial to earn bonus XP!`,
+      });
       toast.success(`🚀 Trying ${selectedTool.name}! +${selectedTool.xpReward * 2} XP`);
+      setIsToolModalOpen(false);
+      
+      // Simulate opening the tool in a new tab
+      setTimeout(() => {
+        window.open(`https://${selectedTool.name.toLowerCase().replace(/\s+/g, '')}.com`, '_blank');
+      }, 1000);
+    }
+  };
+
+  const handleToolTutorial = () => {
+    if (selectedTool) {
+      addXP(selectedTool.xpReward * 3);
+      toast.success(`📚 Tutorial completed! +${selectedTool.xpReward * 3} XP`);
       setIsToolModalOpen(false);
     }
   };
@@ -349,6 +367,14 @@ const AITools = () => {
                 >
                   <Play size={16} />
                   Try {selectedTool.name}
+                </button>
+                <button 
+                  className="tutorial-btn"
+                  onClick={handleToolTutorial}
+                  style={{ background: 'var(--primary-green)' }}
+                >
+                  <Code size={16} />
+                  Start Tutorial
                 </button>
                 <button 
                   className="cancel-btn"
