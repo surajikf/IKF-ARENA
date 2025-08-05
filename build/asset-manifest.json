@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.a507227d.css",
-    "main.js": "/static/js/main.f7c8d9cb.js",
-    "index.html": "/index.html",
-    "main.a507227d.css.map": "/static/css/main.a507227d.css.map",
-    "main.f7c8d9cb.js.map": "/static/js/main.f7c8d9cb.js.map"
+    "main.css": "/ai-mastermind-arena/static/css/main.a507227d.css",
+    "main.js": "/ai-mastermind-arena/static/js/main.f7c8d9cb.js",
+    "index.html": "/ai-mastermind-arena/index.html",
+    "main.a507227d.css.map": "/ai-mastermind-arena/static/css/main.a507227d.css.map",
+    "main.f7c8d9cb.js.map": "/ai-mastermind-arena/static/js/main.f7c8d9cb.js.map"
   },
   "entrypoints": [
     "static/css/main.a507227d.css",
