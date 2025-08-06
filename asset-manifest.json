@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ai-mastermind-arena/static/css/main.a507227d.css",
-    "main.js": "/ai-mastermind-arena/static/js/main.f7c8d9cb.js",
-    "index.html": "/ai-mastermind-arena/index.html",
-    "main.a507227d.css.map": "/ai-mastermind-arena/static/css/main.a507227d.css.map",
-    "main.f7c8d9cb.js.map": "/ai-mastermind-arena/static/js/main.f7c8d9cb.js.map"
+    "main.css": "/IKF-ARENA/static/css/main.a507227d.css",
+    "main.js": "/IKF-ARENA/static/js/main.f7c8d9cb.js",
+    "index.html": "/IKF-ARENA/index.html",
+    "main.a507227d.css.map": "/IKF-ARENA/static/css/main.a507227d.css.map",
+    "main.f7c8d9cb.js.map": "/IKF-ARENA/static/js/main.f7c8d9cb.js.map"
   },
   "entrypoints": [
     "static/css/main.a507227d.css",
