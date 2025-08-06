@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/IKF-ARENA/static/css/main.210308ca.css",
-    "main.js": "/IKF-ARENA/static/js/main.db51c70c.js",
+    "main.css": "/IKF-ARENA/static/css/main.b8a219e2.css",
+    "main.js": "/IKF-ARENA/static/js/main.6b11aecd.js",
     "index.html": "/IKF-ARENA/index.html",
-    "main.210308ca.css.map": "/IKF-ARENA/static/css/main.210308ca.css.map",
-    "main.db51c70c.js.map": "/IKF-ARENA/static/js/main.db51c70c.js.map"
+    "main.b8a219e2.css.map": "/IKF-ARENA/static/css/main.b8a219e2.css.map",
+    "main.6b11aecd.js.map": "/IKF-ARENA/static/js/main.6b11aecd.js.map"
   },
   "entrypoints": [
-    "static/css/main.210308ca.css",
-    "static/js/main.db51c70c.js"
+    "static/css/main.b8a219e2.css",
+    "static/js/main.6b11aecd.js"
   ]
 }
